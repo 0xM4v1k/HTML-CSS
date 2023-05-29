@@ -142,3 +142,47 @@ debajo del elemento de referencia */
 .form-pseudoclases *:disabled{
   background-color: pink;
 }
+
+/* Orden adecuado de pseudoclases:
+:link
+:active
+:visited
+:hover
+*/
+
+.menu-pseudoclases a:visited{
+  color: olive;
+}
+
+/*Se le aplicará el estilo (Hover = un estado) cuando el cursor está por encima de una etiqueta*/
+.menu-pseudoclases a:hover{
+  color: orange;
+}
+
+.p-pseudoclases:hover{
+  font-size: 20px;
+}
+
+#temario-css:target{
+  background-color: lightgreen;
+}
+
+.lista-pseudoclases li:first-child{
+  color: blue;
+}
+
+.lista-pseudoclases li:last-child{
+  color: violet;
+}
+
+.lista-pseudoclases li:nth-child(3){
+  color: pink;
+}
+
+.lista-pseudoclases li:nth-child(2n){
+  font-size: 18px;
+}
+
+.lista-pseudoclases li:nth-child(3n){
+  font-size: 18px;
+}
