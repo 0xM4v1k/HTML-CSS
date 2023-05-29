@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de CSS</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    html{
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <article id="temario-css">
+  <h1>Aprendiendo CSS</h1>
+  <p><i style="color: blueviolet;">Cascading Style Sheets</i> - Hojas de Estilo en Cascada</p>
+  <h2>Temario del curso</h2>
+  <ul>
+    <li><a href="index.html#selectores-basicos">Selectores básicos</a></li>
+    <li><a href="index.html#selectores-avanzados">Selectores Avanzados</a></li>
+    <li><a href="index.html#pseudoclases">PseudoClases</a></li>
+  </ul>
+  </article>
+  
+  <hr>
+
+  <article id="selectores-basicos">
+    <h2>Selectores básicos</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur praesentium, dicta, excepturi voluptatum cumque qui officiis quos veritatis quaerat corrupti tenetur molestiae quia cupiditate, ut nostrum ratione quis sint tempora.
+    </p>
+
+    <p id="parrafo-dos">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium beatae fuga explicabo? Eum, aliquid obcaecati voluptatibus labore iste quam, a hic ducimus optio asperiores odio ipsum quibusdam illum nam. Obcaecati.
+    </p>
+
+    <p class="text-32 bg-skyblue">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum a dicta iusto, laudantium quod odio libero odit, modi quasi voluptates asperiores inventore quos suscipit omnis ipsum vel. Vero, error asperiores.
+    </p>
+
+    <p class="text-20 bg-steelblue text-white">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque qui possimus officia eligendi, blanditiis recusandae nemo perferendis, hic earum modi iure adipisci voluptas delectus incidunt voluptates, repudiandae expedita sed porro.
+    </p>
+
+    <p class="text-32 bg-steelblue text-white">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid soluta iure voluptatibus rerum odit fugit nulla fuga quae laudantium eius corporis harum dicta hic, libero error. Ullam ut inventore quas.
+    </p>
+    <a href="index.html#temario-css">☝️</a>
+  </article>
+
+  <hr>
+
+  <article id="selectores-avanzados">
+    <h2>Selectores Avanzados</h2>
+    <h3>Selectores hijos</h3>
+
+    <h4>Selector de hijos directos</h4>
+    <ul class="hijos-directos">
+      <li><b>Primavera</b></li>
+      <li><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+
+    <h4>Selector de hijos descendientes</h4>
+    <ul class="hijos-descendientes">
+      <li><b>Primavera</b></li>
+      <li><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+
+    <h3>Selectores de hermanos</h3>
+    <h4>Selector de hermanos (En general)</h4>
+    <ul>
+      <li><b>Primavera</b></li>
+      <li class="hermanos-general"><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+
+    <h4>Selector de hermanos adyacente</h4>
+      <ul>
+      <li><b>Primavera</b></li>
+      <li class="hermanos-adyacentes"><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+
+    <h3>Selectores de Atributos</h3>
+    <nav class="selectores-atributos">
+      <ul>
+        <li><a href="https://jonmircha.com" target="_blank">Inicio</a></li>
+        <li><a class="menu-item cursos button" href="http://jonmircha.com/cursos" target="_blank">Cursos</a></li>
+        <li><a href="https://jonmircha.com/blog" target="_blank">Blog</a></li>
+        <li><a class="menu item notas button" href="http://jonmircha.com/mentoria" target="_blank">Mentoría</a></li>
+        <li><a class="menu-item notas button" href="https://jonmircha.com/hola" target="_blank">Hola</a></li>
+        <li><a href="index.html#temario-css">Regresar al Temario</a></li>
+      </ul>
+    </nav>
+
+    <h3>Selector Universal(*)</h3>
+    <ul class="selector-universal">
+      <li><b>Primavera</b></li>
+      <li><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+    <a href="index.html#temario-css">☝️</a>
+  </article>
+
+  <hr>
+
+  <article id="pseudoclases">
+    <h2>PseudoClases</h2>
+    <form class="form-pseudoclases">
+      <input type="text" name="nombre" placeholder="Escribe tu nombre" required>
+      <br>
+      <input type="email" name="correo" placeholder="Escribe tu correo" required>
+      <br>
+      <input type="submit">
+      <input type="submit" disabled>
+    </form>
+    <a href="index.html#temario-css">☝️</a>
+  </article>
+</body>
+</html>

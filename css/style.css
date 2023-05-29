@@ -1,0 +1,144 @@
+/* Comentario en CSS
+Regla css consta de dos partes:
+1) el selector
+2) bloque de declaraciones: {
+  atributo: valor;
+  atributo-de-mas-palabras: valor;
+}
+*/
+/*Son mala práctica por que son bloqueantes a la hora de que el navegador lee
+esta instrucción*/
+/* @import url("otro-style.css"); */
+
+h1{
+  color: chocolate;
+  background-color: aqua;
+  text-align: center;
+  border-style: solid;
+  border-color: black;
+}
+
+/*
+Selectores básicos:
+1) Etiquetas -> Son elementos html
+2) Identificadores -> son atributo id - #
+3) Clases -> atributo class - .
+*/
+
+p{
+  color: midnightblue;
+}
+
+/*Dar estilos con Id se considera un antipatrón(mala práctica)*/
+#parrafo-dos{
+  background-color: skyblue;
+}
+
+/*Dar estilos con clases nos permite reutilizar nuestro código css*/
+
+.bg-skyblue{
+  background-color: skyblue;
+}
+
+.bg-steelblue{
+  background-color: steelblue;
+}
+
+.text-20{
+  font-size: 20px;
+}
+
+.text-32{
+  font-size: 32px;
+}
+
+.text-white{
+  color: white;
+}
+
+.hijos-directos > li{
+  background-color: thistle;
+}
+
+.hijos-descendientes b{
+  background-color: thistle;
+}
+
+/* Los selectores de hermanos van a aplicar a  los elementos que son hermanos y que estén por
+debajo del elemento de referencia */
+.hermanos-general ~ li {
+  background-color: thistle;
+}
+
+.hermanos-adyacentes + li {
+  background-color: thistle;
+}
+
+/* Selectores de atributos */
+
+.selectores-atributos a[href]{
+  color: orangered;
+}
+
+.selectores-atributos a[target="_blank"]{
+  font-weight: bold;
+}
+
+/* El comodin del * aplica el estilo si contiene el texto en cuestión en cualquier parte*/
+.selectores-atributos a[href*="jonmircha"]{
+  font-size: 24px;
+}
+
+/* El comodin del ^ aplica el estilo si contiene el texto en cuestion al inicio*/
+.selectores-atributos a[href^="http://"]{
+  text-decoration: none;
+}
+
+/* El comodin del $ aplica el estilo si contiene el texto en cuestion al final*/
+.selectores-atributos a[href$=".com"]{
+  background-color: black;
+}
+
+/* El comodin del ~ aplica el estilo si contiene el texto en cuestion en una lista separada por espacios*/
+.selectores-atributos a[class ~="cursos"]{
+  background-color: steelblue;
+}
+
+/* El comodin del | aplica el estilo si contiene el texto en cuestion en una lista separada por espacios y que después del texto en cuestión pueda venir un guión medio -*/
+.selectores-atributos a[class |="menu"]{
+  font-style: italic;
+}
+
+/* Selector universal */
+
+*{
+  font-family: sans-serif;
+}
+
+.selector-universal * {
+  font-size: 24px;
+}
+
+/* PseudoClases - Dan estilos dependiendo del contexto, posición o estado del elemento
+    https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
+*/
+/* required es un estado del formulario */
+.form-pseudoclases *:required{
+  border-color: yellow;
+}
+
+.form-pseudoclases *:valid{
+  border-color: green;
+}
+
+.form-pseudoclases *:invalid{
+  border-color: red;
+}
+
+.form-pseudoclases *:focus{
+  background-color: skyblue;
+}
+
+.form-pseudoclases *:disabled{
+  background-color: pink;
+}
