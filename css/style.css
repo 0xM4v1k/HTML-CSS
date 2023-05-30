@@ -183,6 +183,21 @@ debajo del elemento de referencia */
   font-size: 18px;
 }
 
+/* Va realizando los cambios en la lista desordenada de 3 en 3 */
 .lista-pseudoclases li:nth-child(3n){
   font-size: 18px;
+}
+
+/* even usado para los elementos pares significa que va de 2 en 2*/
+.lista-pseudoclases li:nth-child(even){
+  background-color: yellow;
+}
+
+/* odd usado para los elementos impares*/
+.lista-pseudoclases li:nth-child(odd){
+  background-color: orangered;
+}
+
+.articulo-pseudoclases p:first-of-type{
+  background-color: aquamarine;
 }
