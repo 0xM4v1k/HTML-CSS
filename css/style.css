@@ -119,7 +119,7 @@ debajo del elemento de referencia */
   font-size: 24px;
 }
 
-/* PseudoClases - Dan estilos dependiendo del contexto, posición o estado del elemento
+/* PseudoClases - Dan estilos dependiendo del contexto, posición o estado del elemento se usa :
     https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
 */
 /* required es un estado del formulario */
@@ -201,3 +201,74 @@ debajo del elemento de referencia */
 .articulo-pseudoclases p:first-of-type{
   background-color: aquamarine;
 }
+
+.articulo-pseudoclases p:last-of-type{
+  background-color: brown;
+}
+
+.articulo-pseudoclases p:nth-of-type(3n){
+  background-color: fuchsia;
+}
+
+/* la pseudoclase not() se usa cuando no se quiere que una etiqueta sea afectada por el estilo */
+.articulo-pseudoclases *:not(p){
+  background-color: darkseagreen;
+}
+
+/* 
+Pseudoelementos - Dan estilos a partes específicas de un elemento, se usa el :: para diferenciarlos de las pseudoclases
+https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements
+ */
+
+ .saga-geminis::before{
+  /* La propiedad content es importante en los pseudoelementos before y after */
+  /* Content es el texto de contenido a complementar según el pseudoelemento */
+  content: "🦸‍♂️";
+ }
+
+  .saga-geminis::after{
+  /* La propiedad content es importante en los pseudoelementos before y after */
+  content: "🛐";
+ }
+
+ .saga-precio::before{
+  content: "$";
+  font-weight: bold;
+ }
+
+ .saga-precio::after{
+  content: "USD";
+  font-weight: bold;
+ }
+
+ .p-pseudoelementos::first-letter{
+  font-size: bold;
+  font-size: 32px;
+ }
+
+.p-pseudoelementos::first-line{
+  color:coral
+ }
+
+ .p-pseudoelementos::selection{
+  color:green;
+  background-color: black;
+ }
+
+ .input-pseudoelementos::placeholder{
+  color: gold;
+ }
+
+ /* Agrupar Selectores */
+
+.form-agrupar-selectores input[type="text"],
+.form-agrupar-selectores input[type="email"],
+.form-agrupar-selectores textarea{
+  border-color: yellow;
+  border-width: 2px;
+  border-style: dashed;
+  background-color: black;
+  font-size: 20px;
+  display: block;
+  width: 300px;
+ }
