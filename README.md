@@ -10,5 +10,5 @@
 🔵 Normalize CSS - https://necolas.github.io/normalize.css/
 🔵 Autoprefixer CSS - https://autoprefixer.github.io/
 🔵 Modelo de Caja - https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/The_box_model
-🔵 Tamaño de Caja Paul Irish - https://www.paulirish.com/2012/box-si...
+🔵 Tamaño de Caja Paul Irish - https://www.paulirish.com/2012/box-sizing-border-box-ftw/
 🔵 960 Grid System - https://960.gs/
