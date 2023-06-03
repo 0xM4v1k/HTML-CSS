@@ -351,3 +351,15 @@ blockquote#cita-marco{
   border-style: inherit;
   border-color: inherit;
 }
+
+/*
+https://caniuse.com/
+https://autoprefixer.github.io/
+
+Prefijos de los navegadores
+
+-webkit-user-select: none;
+-moz-user-select: none;  
+-ms-user-select: none;
+user-select: none;
+*/
