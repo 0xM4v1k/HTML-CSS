@@ -212,3 +212,41 @@ html {
 .clearfix{
   clear: both;
 }
+
+/* Colapso de Margenes verticales 
+   Los margenes verticales colapson, o sea no se suman
+   mientras que los margenes horizontales no se colapsan, o sea se suman
+*/
+
+.margin-collapse{
+  background-color: skyblue;
+}
+
+.margin-collapse section{
+   border: thin solid black;
+   margin-top: 16px;
+   margin-bottom: 16px;
+}
+
+.margin-collapse span{
+  border: thin solid black;
+  display: inline-block;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+/* Centrado de cajas */
+
+.sitio-web{
+  border: thin solid black;
+  background-color: thistle;
+  width: 800px;
+  height: 1000px;
+  padding: 16px;
+  text-align: center; /*Centra el contenido de la caja*/
+  /* Centra la caja */
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin: 0 auto; */
+}
